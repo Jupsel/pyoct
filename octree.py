@@ -24,7 +24,6 @@ class Node():
         self.ycenter = (self.yupperlimit + self.ylowerlimit) / 2.
         self.zcenter = (self.zupperlimit + self.xlowerlimit) / 2.
         self.name = name
-        # self.print_info()
 
     parent = None
     value = None
@@ -117,7 +116,7 @@ class Node():
         if level == 0:
             try:
                 self.value.append((coord, payload))
-                # print self.value, "<-----"
+
             except AttributeError:
                 self.value = []
                 self.value.append((coord, payload))
